@@ -1,0 +1,36 @@
+name: build-resume
+on:
+  push:
+    branches:
+      - main
+#  workflow_dispatch:    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: 'main'
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Checkout main
+      run: git checkout main
+
+    - name: Run Makefile
+      run: |
+        make run
+
+    - name: Add & Commit
+      if: success()
+      run: |
+        git config --local user.email "janpreetsinghgill@gmail.com"
+        git config --local user.name "Janpreet Singh via GitHub Action"
+        date > time.txt
+        git add janpreet-singh-resume.pdf time.txt
+        git commit -m "🤖 resume-building bot is helping"
+
+    - name: Push to main
+      if: success()
+      run: git push     
+        

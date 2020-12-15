@@ -1,0 +1,170 @@
+%-------------------------
+% Janpreet Singh Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://janpreet.com/}{\Large Janpreet Singh}} & Email : \href{mailto:singh@janpreet.com}{singh@janpreet.com}\\
+  \href{https://janpreet.com/}{https://www.janpreet.com} & Mobile : +1-845-505-6630 \\
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Marist College}{Poughkeepsie, NY}
+      {Master of Science in Information Systems}{Jan. 2018}
+    \resumeSubheading
+      {Guru Tegh Bahadur Institute of Technology}{New Delhi, India}
+      {Bachelor of Engineering in Electronics and Communications Engineering}{May. 2012}
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Shell, Java, Selenium, SQL, Python, PHP, HTML, Javascript, jQuery}
+      \hfill}
+    \item{    
+      \textbf{Tools}{: Ansible, Terraform, Git, Jenkins, Docker, Kubernetes, Maven}
+      \hfill }
+    \item{  
+      \textbf{Reporting}{: Qlikview, Splunk, IBM Cognos}
+      \hfill}
+    \item{     
+      \textbf{Cloud}{: GCP}
+    }
+  \resumeSubHeadingListEnd  
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Globalfoundries}{Malta, NY}
+      {Sr. Factory Automation Engineer, CIM}{July 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{CIM Application Admin}
+          {Releasing, supporting, and maintaining uptime of manufacturing applications.}
+        \resumeItem{Site Reliability Engineer/SysOps}
+          {Planning, stratergizing, and implementing modern engineering practices for shorter, faster and reliable release cycles.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Globalfoundries}{Malta, NY}
+      {Factory Automation Engineer, CIM}{Jan 2019 - June 2020}
+      \resumeItemListStart
+        \resumeItem{CIM Application Admin}
+          {Released, supported, and maintained uptime of manufacturing applications.}
+        \resumeItem{Business Intelligence Report Developer}
+          {Designed, developed and maintained business intelligence solutions across multiple teams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Globalfoundries}{Malta, NY}
+      {Factory Automation Engineer, AMHS}{Jan 2018 - Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Business Intelligence Report Developer}
+          {Designed, developed and maintained business intelligence solutions for AMHS. Crafted and executed queries upon request for presenting information through reports and visualization}          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Globalfoundries}{Malta, NY}
+      {Co-op Engineer, AMHS}{May 2017 - Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Business Intelligence Report Developer}
+          {Designed and developed Qlikview reports for AMHS.}     
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Geodis SCO}{Poughkeepsie, NY}
+      {Data Analyst Intern, AMHS}{May 2016 - Dec 2016}
+      \resumeItemListStart
+        \resumeItem{Business Intelligence Report Developer}
+          {Designed, developed and maintained reporting and performance matrix applications using PHP and MySQL.}          
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Marist College Digital Learning}{Poughkeepsie, NY}
+      {Technical Consultant, Academic eLearning}{March 2016 - May 2016}
+      \resumeItemListStart
+        \resumeItem{Business Intelligence Report Developer}
+          {Performed Quality Assurance testing for the college LMS system using JIRA.}          
+      \resumeItemListEnd      
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Kubernetes Playground}
+      {Disposable GCP managed K8s cluster created using Terraform and Jenkins JCasC driven deployments.}
+    \resumeSubItem{RaspberryPi Kubernetes the Hard Way using Ansible}
+      {Kelsey Hightower's KTHW inspired RaspberryPi based cluster managed by Ansible.}
+  \resumeSubHeadingListEnd
+
+\end{document}
