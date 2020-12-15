@@ -1,4 +1,4 @@
-# resume
+# Effective-Dollop
 
 ![build-resume](https://github.com/janpreet/effective-dollop/workflows/build-resume/badge.svg)
 
