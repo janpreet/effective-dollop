@@ -7,7 +7,7 @@ CONTAINER_INSTANCE ?= default
 
 PWD ?= ${PWD}
 
-.PHONY: build run stop rm
+.PHONY: build run stop rmi
 
 build: Dockerfile
 	docker build -t $(NS)/$(IMAGE_NAME):$(VERSION) -f Dockerfile .
@@ -19,7 +19,7 @@ run:
 stop:
 	docker stop $(CONTAINER_NAME)-$(CONTAINER_INSTANCE)
 
-rm:
-	docker rm $(CONTAINER_NAME)-$(CONTAINER_INSTANCE)
+rmi:
+	docker rmi $(NS)/$(IMAGE_NAME):$(VERSION)
 
 default: run
