@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'janpreet-singh-resume.tex'      
 #  workflow_dispatch:    
 
 jobs:
