@@ -42,7 +42,13 @@
 
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubItem}[1]{
+  \item\small{
+    {#1}
   }
 }
 
@@ -50,13 +56,13 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+        \small #3 & \small #4 \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \small #1 & \small #2 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -79,94 +85,94 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Master of Science in Information Systems}{Jan. 2018}    
       {Marist College}{Poughkeepsie, NY}
-      {Master of Science in Information Systems}{Jan. 2018}
     \resumeSubheading
+      {Bachelor of Technology in Electronics and Communications Engineering}{May. 2012}    
       {Guru Tegh Bahadur Institute of Technology}{New Delhi, India}
-      {Bachelor of Engineering in Electronics and Communications Engineering}{May. 2012}
   \resumeSubHeadingListEnd
 
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: Shell, Java, Selenium, SQL, Python, PHP, HTML, Javascript, jQuery}
-      \hfill}
-    \item{    
-      \textbf{Tools}{: Ansible, Terraform, Git, GitHub Actions, Jenkins, Docker, Kubernetes, Maven}
-      \hfill }
-    \item{  
-      \textbf{Reporting}{: Qlikview, Splunk, IBM Cognos}
-      \hfill}
-    \item{     
-      \textbf{Cloud}{: GCP}
-    }
-  \resumeSubHeadingListEnd  
+\section{Skills}
+  {Kubernetes, Docker, Ansible, Terraform, Google Cloud, Git, GitHub Actions, 
+  Jenkins, Linux, Shell Scripting, Python, Java, Maven, Selenium, SQL, 
+  PHP, HTML, Javascript, jQuery, Qlikview, Splunk.}
+ 
 
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Globalfoundries}{Malta, NY}
-      {Sr. Factory Automation Engineer, CIM}{July 2020 - Present}
+      {Sr. CIM Applications Engineer, SRE \& SysOps}{July 2020 - Present}
       \resumeItemListStart
-        \resumeItem{CIM Application Admin}
-          {Releasing, supporting, and maintaining uptime of manufacturing applications.}
-        \resumeItem{SRE and SysOps}
-          {Planning, stratergizing, and implementing modern engineering practices for shorter, faster and reliable release cycles.}
+        \resumeSubSubItem
+          {Evangelized and implemented SRE best practices by utilizing automated deployment procedures 
+          using BitBucket, Jenkins and Ansible, for faster deployments and roll-backs.}
+        \resumeSubSubItem
+          {Created and implemented a Splunk dashboard to bring visibility to change requests, 
+          reducing the number of rejected tickets and increasing the release schedule by 50\%.}
+        \resumeSubSubItem
+          {Disposable Kubernetes cluster POC; created using Terraform and Google Cloud Platform. 
+          Sample Maven and Python applications built using Jenkins Docker Cloud and deployed using Helm. 
+          I wrote a custom Terraform module `cluster-kubeconfig` for this project 
+          to solve GKE module’s lack of kubeconfig generation.}          
       \resumeItemListEnd
       
-    \resumeSubheading
-      {Globalfoundries}{Malta, NY}
-      {Factory Automation Engineer, CIM}{Jan 2019 - June 2020}
+    \resumeSubSubheading
+      {CIM Applications Engineer}{Jan 2019 - June 2020}
       \resumeItemListStart
-        \resumeItem{CIM Application Admin}
-          {Released, supported, and maintained uptime of manufacturing applications.}
-        \resumeItem{Business Intelligence Report Developer}
-          {Designed, developed and maintained business intelligence solutions across multiple teams.}
+        \resumeSubSubItem
+          {Ensured 99.95\% uptime of critical applications in a 24x7x365 environment by 
+          utilizing a comprehensive monitoring strategy in Splunk to automate detection 
+          and trigger response to incidents and outages. Reduced MTTR where automation 
+          was not possible by providing effective runbooks to Level 1 Support.}
+        \resumeSubSubItem
+          {Developed, tested, and implemented a Java application to eliminate repetitive data entry 
+          tasks that saves \$9k worth of labor hours annually. Used Hibernate to interact with 
+          Oracle DB and Selenium libraries for automation where API access was not possible. 
+          Packaged the app using Maven \& Docker and created a CI/CD pipeline to execute testing 
+          and deployment using Jenkins.} 
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Globalfoundries}{Malta, NY}
-      {Factory Automation Engineer, AMHS}{Jan 2018 - Dec 2018}
+    \resumeSubSubheading
+      {AMHS Factory Automation Engineer}{Jan 2018 - Dec 2018}
       \resumeItemListStart
-        \resumeItem{Business Intelligence Report Developer}
-          {Designed, developed and maintained business intelligence solutions for AMHS. Crafted and executed queries upon request for presenting information through reports and visualization}          
+        \resumeSubSubItem
+          {Helped the company save \$36,000 worth of labor-hours per year by replacing 
+          manual production control practices with an automated Qlikview report.}         
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Globalfoundries}{Malta, NY}
-      {Co-op Engineer, AMHS}{May 2017 - Dec 2017}
+    \resumeSubSubheading
+      {AMHS Co-op Engineer}{May 2017 - Dec 2017}
       \resumeItemListStart
-        \resumeItem{Business Intelligence Report Developer}
-          {Designed and developed Qlikview reports for AMHS.}     
+        \resumeSubSubItem
+          {Constructed complex SQL queries to extract, compile and visualize tool information in Qlikview.}     
       \resumeItemListEnd
 
     \resumeSubheading
       {Geodis SCO}{Poughkeepsie, NY}
       {Data Analyst Intern}{May 2016 - Dec 2016}
       \resumeItemListStart
-        \resumeItem{Data Analysis}
-          {Analyzed EDI's for issues and co-ordinated resolutions with the carriers.}         
-        \resumeItem{Solution Design}        
-          {Designed, developed and maintained reporting and performance matrix application using PHP and MySQL.}          
+        \resumeSubSubItem
+          {Created a PHP based application to monitor employee training, 
+          including an integration with the Youtube API to control the page navigation.}
+        \resumeSubSubItem
+          {Developed session and data-based Training Matrix tool using PHP, jQuery, and d3js 
+          to capture employee training performance with pending approval notifications, 
+          and automatic monthly report generation.}          
       \resumeItemListEnd
-      
-    \resumeSubheading
-      {Marist College Digital Learning}{Poughkeepsie, NY}
-      {Technical Consultant, Academic eLearning}{March 2016 - May 2016}
-      \resumeItemListStart
-        \resumeItem{Quality Assurance}
-          {Performed Quality Assurance testing for the college LMS system using JIRA.}          
-      \resumeItemListEnd      
-
+        
   \resumeSubHeadingListEnd
 
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Kubernetes Playground}
-      {Disposable GCP managed K8s cluster created using Terraform and Jenkins JCasC driven deployments.}
-    \resumeSubItem{RaspberryPi Kubernetes the Hard Way using Ansible}
-      {Kelsey Hightower's KTHW inspired RaspberryPi based cluster managed by Ansible.}
+    \resumeSubSubItem
+      {Raspberry Pi based highly-available Kubernetes cluster; deployed the hard way using only Ansible. 
+      Inspired by Kelsey Hightower. I created Roles for provisioning certs and bootstrapping cluster 
+      components including a highly-available control plane and etcd.}
+    \resumeSubSubItem
+      {Self updating GitHub README; created using Python and GitHub Actions. 
+      I wrote a custom Python module `write2list` to convert a Tuple to a List for self-learning purposes.}
   \resumeSubHeadingListEnd
 
-\end{document}
+  \end{document}
