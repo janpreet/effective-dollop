@@ -15,6 +15,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[document]{ragged2e}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -48,7 +49,7 @@
 
 \newcommand{\resumeSubSubItem}[1]{
   \item\small{
-    {#1}
+    \justify{#1}
   }
 }
 
@@ -86,10 +87,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Master of Science in Information Systems}{Jan. 2018}    
-      {Marist College}{Poughkeepsie, NY}
+      {Marist College, 3.34}{Poughkeepsie, NY}
     \resumeSubheading
       {Bachelor of Technology in Electronics and Communications Engineering}{May. 2012}    
-      {Guru Tegh Bahadur Institute of Technology}{New Delhi, India}
+      {Guru Tegh Bahadur Institute of Technology, 3.33}{New Delhi, India}
   \resumeSubHeadingListEnd
 
 \section{Skills}
@@ -106,7 +107,7 @@
       {Sr. CIM Applications Engineer, SRE \& SysOps}{July 2020 - Present}
       \resumeItemListStart
         \resumeSubSubItem
-          {Evangelized and implemented SRE best practices by utilizing automated deployment procedures 
+          {Evangelizing and implementing SRE best practices by utilizing automated deployment procedures 
           using BitBucket, Jenkins and Ansible, for faster deployments and roll-backs.}
         \resumeSubSubItem
           {Created and implemented a Splunk dashboard to bring visibility to change requests, 
@@ -138,7 +139,7 @@
       {AMHS Factory Automation Engineer}{Jan 2018 - Dec 2018}
       \resumeItemListStart
         \resumeSubSubItem
-          {Helped the company save \$36,000 worth of labor-hours per year by replacing 
+          {Helped the company save \$36k worth of labor-hours per year by replacing 
           manual production control practices with an automated Qlikview report.}         
       \resumeItemListEnd
 
