@@ -49,7 +49,7 @@
 
 \newcommand{\resumeSubSubItem}[1]{
   \item\small{
-    \justify{#1}
+    {#1}
   }
 }
 
@@ -79,9 +79,11 @@
 \begin{document}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://janpreet.com/}{\Large Janpreet Singh}} & Email : \href{mailto:singh@janpreet.com}{singh@janpreet.com}\\
-  \href{https://janpreet.com/}{https://www.janpreet.com} & Mobile : +1-845-505-6630 \\
+  \textbf{\href{https://janpreet.com/}{\Large Janpreet Singh}} & Email: \href{mailto:singh@janpreet.com}{singh@janpreet.com}\\
+  \href{https://janpreet.com/}{https://janpreet.com} & Phone: +1-845-505-6630 \\
 \end{tabular*}
+
+\justifying
 
 \section{Education}
   \resumeSubHeadingListStart
@@ -114,9 +116,9 @@
           reducing the number of rejected tickets and increasing the release schedule by 50\%.}
         \resumeSubSubItem
           {Disposable Kubernetes cluster POC; created using Terraform and Google Cloud Platform. 
-          Sample Maven and Python applications built using Jenkins Docker Cloud and deployed using Helm. 
-          I wrote a custom Terraform module `cluster-kubeconfig` for this project 
-          to solve GKE module’s lack of kubeconfig generation.}          
+          Sample Maven and Python applications built using Jenkins Docker Cloud and deployed using Helm 
+          to demonstrate the DevOps model. Wrote a custom Terraform module `cluster-kubeconfig` 
+          to solve GKE module`s lack of kubeconfig generation.}          
       \resumeItemListEnd
       
     \resumeSubSubheading
