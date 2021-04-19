@@ -41,7 +41,7 @@ jobs:
           rm -rf vigilant-dollop
           git config --global user.email "janpreetsinghgill@gmail.com"
           git config --global user.name "Janpreet Singh"
-          git clone https://janpreet:${{ secrets.PAT }}@github.com/janpreet/vigilant-dollop.git
+          git clone https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           cp janpreet-singh-resume.pdf vigilant-dollop/janpreet-singh-resume.pdf
           cd vigilant-dollop/
           git add janpreet-singh-resume.pdf
