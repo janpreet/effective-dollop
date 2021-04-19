@@ -44,8 +44,9 @@ jobs:
           git clone https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           cp janpreet-singh-resume.pdf vigilant-dollop/janpreet-singh-resume.pdf
           cd vigilant-dollop/
+          git remote set-url origin https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           git add janpreet-singh-resume.pdf
           git commit -m "🤖 resume-building bot is helping"
-          git push https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
+          git push
           cd ..
           rm -rf vigilant-dollop
