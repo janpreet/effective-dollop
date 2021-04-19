@@ -28,7 +28,7 @@ jobs:
       run: |
         git config --local user.email "janpreetsinghgill@gmail.com"
         git config --local user.name "Janpreet Singh via GitHub Action"
-        date > time.txt
+        TZ=":US/Eastern" date > time.txt
         git add janpreet-singh-resume.pdf time.txt
         git commit -m "🤖 resume-building bot is helping"
 
