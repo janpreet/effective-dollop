@@ -5,7 +5,7 @@ on:
       - main
     paths:
       - 'janpreet-singh-resume.tex'      
-#  workflow_dispatch:    
+  workflow_dispatch:    
 
 jobs:
   build:
