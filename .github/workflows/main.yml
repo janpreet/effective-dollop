@@ -46,6 +46,6 @@ jobs:
           cd vigilant-dollop/
           git add janpreet-singh-resume.pdf
           git commit -m "🤖 resume-building bot is helping"
-          git push --set-upstream origin main
+          git push https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           cd ..
           rm -rf vigilant-dollop
