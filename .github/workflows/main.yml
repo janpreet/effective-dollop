@@ -40,7 +40,7 @@ jobs:
       run: |
           rm -rf vigilant-dollop
           git clone https://janpreet:${{ secrets.PAT }}@github.com/janpreet/vigilant-dollop.git
-          copy janpreet-singh-resume.pdf vigilant-dollop/janpreet-singh-resume.pdf
+          cp janpreet-singh-resume.pdf vigilant-dollop/janpreet-singh-resume.pdf
           cd vigilant-dollop/
           git add janpreet-singh-resume.pdf
           git commit -m "🤖 resume-building bot is helping"
