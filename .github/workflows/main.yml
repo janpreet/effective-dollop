@@ -41,12 +41,13 @@ jobs:
           rm -rf vigilant-dollop
           git config --global user.email "janpreetsinghgill@gmail.com"
           git config --global user.name "Janpreet Singh"
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | xargs -L1 git config --unset-all
           git clone https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           cp janpreet-singh-resume.pdf vigilant-dollop/janpreet-singh-resume.pdf
           cd vigilant-dollop/
           git remote set-url origin https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           git add janpreet-singh-resume.pdf
           git commit -m "🤖 resume-building bot is helping"
-          git push
+          git push --prune https://janpreet:${{ secrets.GITHUB_TOKEN }}@github.com/janpreet/vigilant-dollop.git
           cd ..
           rm -rf vigilant-dollop
