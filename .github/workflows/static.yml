@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Publish resume pdf
 
 on:
   workflow_run:
@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './janpreet-singh-resume.pdf'
+          path: './_site/janpreet-singh-resume.pdf'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
