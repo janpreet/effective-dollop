@@ -2,12 +2,11 @@
 % Janpreet Singh Resume
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
@@ -16,6 +15,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage[document]{ragged2e}
+\usepackage{lmodern}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -32,154 +32,107 @@
 \urlstyle{same}
 
 \raggedbottom
-\raggedright
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large\color{NavyBlue}
+}{}{0em}{}[\color{NavyBlue}\titlerule \vspace{-5pt}]
 
-\pdfgentounicode=1
-
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{#2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubSubItem}[1]{
-  \item\small{
-    {#1}
-  }
+    \justify{#1} \vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-        \small #3 & \small #4 \\
+      \small#3 & \small #4 \\
     \end{tabular*}\vspace{-5pt}
 }
-
-\newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small #1 & \small #2 \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-\renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,itemsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://janpreet.com/}{\Large Janpreet Singh}} & Email: \href{mailto:hire@janpreet.com}{hire@janpreet.com}\\
-  \href{https://janpreet.com/}{https://janpreet.com} & Phone: on-request \\
-\end{tabular*}
-
-\justifying
+\begin{center}
+    \textbf{\Huge \scshape Janpreet Singh} \\ \vspace{1pt}
+    \small (xxx)xxx-xxxx | email@example.com | https://janpreet.com | GitHub \& LinkedIn: janpreet
+\end{center}
 
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Master of Science in Information Systems}{Jan. 2018}    
-      {Marist College, 3.34}{Poughkeepsie, NY}
+      {Marist College}{Poughkeepsie, NY}
+      {M.S. Information Systems}{Jan. 2018}
     \resumeSubheading
-      {Bachelor of Technology in Electronics and Communications Engineering}{May. 2012}    
-      {Guru Gobind Singh Indraprastha University, 3.33}{New Delhi, India}
+      {Guru Gobind Singh Indraprastha University}{New Delhi, India}
+      {B.Tech. Electronics and Communications Engineering}{May 2012}
   \resumeSubHeadingListEnd
 
-\section{Tech Stack}
-  {Azure, AWS, Kubernetes, Docker, Ansible, Splunk, Datadog, Terraform, Google Cloud, Hashicorp Vault, Consul, Rancher, MongoDB Atlas,
-  Jenkins, Linux, Bash, Python}
- 
-\section{Summary}
-  {DevOps Engineer interested in architecting and deploying high-quality automation, particularly to save operational
-  cost, and ensure resiliency, efficieny and high-availability of systems. Love to teach and 
-  mentor people. Looking forward to grow and mature as a DevOps Leader.}
- 
+\section{Skills}
+\small{\justify{
+\textbf{Cloud:} GCP, Azure, AWS;
+\textbf{Container \& Orchestration:} Kubernetes, Docker, Rancher, Helm, Kustomzie;
+\textbf{IaC \& Configuration Management:} Terraform, Ansible;
+\textbf{Monitoring \& Observability:} Prometheus, Grafana, Splunk, Datadog;
+\textbf{CI/CD \& Version Control:} Jenkins, Concourse, Git, Atlantis, Bitbucket, Azure DevOps, Cloud Deploy;
+\textbf{Databases \& Data Management:} MongoDB Atlas;
+\textbf{Security \& Service Discovery:} Hashicorp Vault, Consul;
+\textbf{Programming Languages:} Bash, Python, Go;
+}}
 
-\section{Experience}
+\section{Professional Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
       {Unqork}{Remote, NYC}
-      {DevOps Engineer}{Nov 2021 - Present}
+      {DevOps Engineer}{Nov 2021 - Jan 2023}
       \resumeItemListStart
-        \resumeSubSubItem
-          {Part of 24x7x365 on-call DevOps roation (Agile) supporting upgrades and releases of customer environments and infrastrucutre.}
-        \resumeSubSubItem
-          {Architecured and delivered contractual cross-function platform features using AWS while ensuring positive developers experience}
-        \resumeSubSubItem
-          {Successfully moved internal DevOps tools and hundreds of multi-cloud customer environments to kubernetes using Ansible and Terraform.}                                     
+        \resumeItem{Orchestrated management of 200+ Kubernetes clusters across AWS/Azure, markedly reducing incident response times while being on-call 24x7.}
+        \resumeItem{Pioneered multi-cloud solutions, resulting in improvements to overall system reliability.}
+        \resumeItem{Demonstrated initiative by developing a custom tool from scratch to address urgent customer data migration needs, ensuring 100\% customer satisfaction and showcasing ability to rapidly deliver solutions to complex problems.}
       \resumeItemListEnd 
 
     \resumeSubheading
-      {Caissa LLC (Merged with Burgiss)}{Remote, NYC}
+    {Caissa LLC (Now part of MSCI via Burgiss merger)}{Remote, NYC}
       {DevOps Engineer}{May 2021 - Nov 2021}
       \resumeItemListStart
-        \resumeSubSubItem
-          {Introduced and successfully setup (architectured and deployed) Terraform managed VDI, DR AKS and AWS MWAA tied to Azure AD.
-          Also setup git mirror between Azure repos and AWS CodeCommit for disaster-recovery.}
-        \resumeSubSubItem
-          {Setup on-demand build and release agents in Kubernetes to eliminate Azure pipelines build queues.}       
-        \resumeSubSubItem
-          {Automated manual Windows service releases using Ansible as one of the very first tasks at the new role.}                                     
+        \resumeItem{Engineered Terraform-managed VDI, DR AKS, and AWS MWAA integrated with Azure AD, significantly enhancing disaster recovery capabilities.}
+        \resumeItem{Re-engineered CI/CD pipelines with on-demand Kubernetes build-and-release agents, greatly reducing build times and improving efficiency.}
       \resumeItemListEnd  
 
     \resumeSubheading
       {Globalfoundries}{Malta, NY}
-      {Sr. Mfg Systems Engineer, SRE}{July 2020 - May 2021}
+      {Sr. Mfg Systems Engineer, SRE}{Jan 2018 - May 2021}
       \resumeItemListStart     
-        \resumeSubSubItem
-          {Evangelized and implemented SRE best practices by utilizing automated deployment procedures 
-          using BitBucket, Jenkins and Ansible, for faster deployments and roll-backs.}
-        \resumeSubSubItem
-          {Disposable Kubernetes cluster POC; created using Terraform and Google Cloud Platform. 
-          Sample Maven and Python applications built using Jenkins Docker Cloud and deployed using Helm 
-          to demonstrate the DevOps model. Wrote a custom Terraform module `cluster-kubeconfig` 
-          to solve GKE module`s lack of kubeconfig generation.}          
+        \resumeItem{Promoted from Mfg Systems Engineer in Jun 2020, expanding responsibilities in a critical 24x7 manufacturing environment.}
+        \resumeItem{Evangelized and implemented SRE practices, yielding substantial improvements in deployment speed and rollback efficiency.}
+        \resumeItem{Developed innovative Kubernetes POC using Terraform/GCP, to demonstrate optimized resource utilization.}
+        \resumeItem{Ensured high uptime with Splunk monitoring, and reduced incident response time by writing runbooks for Level 1 incident response team.}
+        \resumeItem{Created Java application for task automation, saving \$9k annually, leveraging Hibernate and Selenium.}
       \resumeItemListEnd
-      
-    \resumeSubSubheading
-      {Mfg Systems Engineer}{Jan 2019 - June 2020}
-      \resumeItemListStart
-        \resumeSubSubItem
-          {Ensured 99.95\% uptime of critical applications in a 24x7x365 environment by 
-          utilizing a comprehensive monitoring strategy in Splunk to automate detection 
-          and trigger response to incidents and outages. Reduced MTTR where automation 
-          was not possible by providing effective runbooks to Level 1 Support.}
-        \resumeSubSubItem
-          {Developed, tested, and implemented a Java application to eliminate repetitive data entry 
-          tasks that saved \$9k worth of labor hours annually. Used Hibernate to interact with 
-          Oracle DB and Selenium libraries for automation where API access was not possible. 
-          Packaged the app using Maven \& Docker and created a CI/CD pipeline to execute testing 
-          and deployment using Jenkins.} 
-      \resumeItemListEnd
-
-    \resumeSubSubheading
-      {AMHS Factory Automation Engineer}{Jan 2018 - Dec 2018}
-
-    \resumeSubSubheading
-      {AMHS Co-op Engineer}{May 2017 - Dec 2017}
-
   \resumeSubHeadingListEnd
 
-% \section{Projects}
-%   \resumeSubHeadingListStart
-%     \resumeSubSubItem
-%       {Raspberry Pi based highly-available Kubernetes cluster; deployed the hard way using only Ansible. 
-%       Inspired by Kelsey Hightower. I created Roles for provisioning certs and bootstrapping cluster 
-%       components including a highly-available control plane and etcd.}
-%     \resumeSubSubItem
-%       {Self updating GitHub README; created using Python and GitHub Actions. For this I wrote a custom Python module 
-%       `write2list` to convert a Tuple to a List for self-learning purposes.}
-%   \resumeSubHeadingListEnd
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kado - IaC Orchestrator}{https://github.com/janpreet/kado}
+      {Creator \& Maintainer}{2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Developed Go based and OPA policy enforced modular tool for Ansible, Terraform, and Terragrunt execution.}
+        \resumeItem{Implemented "bead" system for scalable configurations, and capabilities to leverage AI for smart recommendations.}
+      \resumeItemListEnd
 
-  \end{document}
+    \resumeSubheading
+      {Proxmox Homelab}{Personal Infrastructure}
+      {DevOps Engineer}{2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Built Proxmox-based homelab using Terraform with AWS S3 remote state.}
+        \resumeItem{Implemented IaC for VM, network, kubernetes, and storage management.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
