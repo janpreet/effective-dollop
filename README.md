@@ -2,8 +2,6 @@
 
 ![build-resume](https://github.com/janpreet/effective-dollop/workflows/build-resume/badge.svg)
 
-# Codified Resume Builder
-
 This repository contains a containerized LaTeX resume builder, allowing for version-controlled, easily updatable, and consistently formatted resumes.
 
 ## Features
@@ -22,7 +20,7 @@ This repository contains a containerized LaTeX resume builder, allowing for vers
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/janpreet/codified-resume.git
+   git clone https://github.com/janpreet/effective-dollop.git
    cd codified-resume
    ```
 
