@@ -22,7 +22,7 @@ This repository contains a containerized LaTeX resume builder, allowing for vers
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/janpreet/codified-resume.git
+   git clone https://github.com/janpreet/effective-dollop.git
    cd codified-resume
    ```
 
